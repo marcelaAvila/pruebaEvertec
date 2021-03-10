@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/thumbnail_3"
+    android:gravity="center"
+    android:paddingLeft="50dp"
+    android:paddingTop="100dp"
+    android:paddingRight="50dp"
+    tools:context=".activities.LoginActivity">
+
+    <EditText
+        android:id="@+id/etUser"
+        style="@style/AppEditTextStyle"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="10dp"
+        android:ems="10"
+        android:hint="@string/user"
+        android:inputType="textPersonName"
+        android:textColor="@color/primary_text" />
+
+    <EditText
+        android:id="@+id/etPass"
+        style="@style/AppEditTextStyle"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/etUser"
+        android:layout_margin="10dp"
+        android:ems="10"
+        android:hint="@string/pass"
+        android:inputType="textPassword"
+        android:textColor="@color/primary_text" />
+
+    <Button
+        android:id="@+id/button"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/etPass"
+        android:layout_margin="20dp"
+        android:background="@drawable/button_login"
+        android:gravity="center"
+        android:text="@string/getIn"
+        android:textColor="@color/colorBlanco" />
+</RelativeLayout>

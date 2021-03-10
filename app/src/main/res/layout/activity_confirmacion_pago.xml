@@ -1,0 +1,91 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_margin="30dp"
+    tools:context=".activities.DatosPagoActivity">
+
+    <TextView
+        android:id="@+id/txNombre"
+        style="@style/TextAppearance.AppCompat"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Nombre" />
+
+    <TextView
+        android:id="@+id/txCedula"
+        style="@style/TextAppearance.AppCompat"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/txNombre"
+        android:text="Cedula" />
+
+    <TextView
+        android:id="@+id/txCorreo"
+        style="@style/TextAppearance.AppCompat"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/txCedula"
+        android:text="Correo" />
+
+    <TextView
+        android:id="@+id/txCelular"
+        style="@style/TextAppearance.AppCompat"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/txCorreo"
+        android:text="Celular" />
+
+
+    <TextView
+        android:id="@+id/txNumeroTarjeta"
+        style="@style/TextAppearance.AppCompat"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/txCelular"
+        android:text="Numero de la tarjeta de credito" />
+
+    <TextView
+        android:id="@+id/txFechaVen"
+        style="@style/TextAppearance.AppCompat"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/txNumeroTarjeta"
+        android:text="Fecha de vencimiento" />
+
+
+    <TextView
+        android:id="@+id/txCodigo"
+        style="@style/TextAppearance.AppCompat"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/txFechaVen"
+        android:text="Codigo de seguridad" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/txCodigo"
+        android:orientation="horizontal">
+
+        <Button
+            android:id="@+id/btAtras"
+            style="@style/TextAppearance.AppCompat.Button"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp"
+            android:text="Volver" />
+
+        <Button
+            android:id="@+id/btConfirmar"
+            style="@style/TextAppearance.AppCompat.Button"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp"
+            android:text="Confirmar" />
+    </LinearLayout>
+
+
+
+</RelativeLayout>

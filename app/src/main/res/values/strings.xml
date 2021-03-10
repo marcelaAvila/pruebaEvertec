@@ -1,0 +1,6 @@
+<resources>
+    <string name="app_name">Ecommerce 3IG</string>
+    <string name="user">Usuario</string>
+    <string name="pass">Contraseña</string>
+    <string name="getIn">Ingresar</string>
+</resources>

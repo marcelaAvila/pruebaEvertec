@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:paddingTop="10dp"
+    tools:context=".activities.PagoActivity">
+
+    <include
+        android:id="@+id/title"
+        layout="@layout/title_cart" />
+
+    <ImageView
+        android:id="@+id/btPago"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:src="@drawable/boton_pago_pse" />
+
+</LinearLayout>

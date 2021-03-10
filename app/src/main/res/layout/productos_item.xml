@@ -1,0 +1,89 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/cardProductos"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_margin="5dp"
+    app:cardCornerRadius="5dp"
+    app:cardElevation="2dp">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="@dimen/size5sp">
+
+        <ImageView
+            android:id="@+id/imagen"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@mipmap/ic_3ig_foreground" />
+
+        <TextView
+            android:id="@+id/txNombre"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="@dimen/size5sp"
+            android:layout_toEndOf="@id/imagen"
+            android:layout_toRightOf="@id/imagen"
+            android:text="Producto 1" />
+
+        <TextView
+            android:id="@+id/txDescripcion"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/txNombre"
+            android:layout_margin="@dimen/size5sp"
+            android:layout_toEndOf="@id/imagen"
+            android:layout_toRightOf="@id/imagen"
+            android:text="Descripcion del producto" />
+
+        <TextView
+            android:id="@+id/txValor"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/txDescripcion"
+            android:layout_margin="@dimen/size5sp"
+            android:layout_toEndOf="@id/imagen"
+            android:layout_toRightOf="@id/imagen"
+            android:text="Valor" />
+
+        <LinearLayout
+            android:id="@+id/layoutButtons"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_marginTop="10dp"
+            android:orientation="horizontal">
+
+            <ImageView
+                android:id="@+id/btnminus"
+                android:layout_width="24dp"
+                android:layout_height="24dp"
+                android:layout_marginLeft="5dp"
+                app:srcCompat="@drawable/menos" />
+
+            <TextView
+                android:id="@+id/textcantidad"
+                android:layout_width="35dp"
+                android:layout_height="24dp"
+                android:layout_gravity="center"
+                android:layout_marginLeft="4dp"
+                android:layout_marginRight="4dp"
+                android:gravity="center"
+                android:text="0"
+                android:textColor="@color/colorNegro" />
+
+            <ImageView
+                android:id="@+id/btnplus"
+                android:layout_width="24dp"
+                android:layout_height="24dp"
+                android:layout_marginRight="5dp"
+                app:srcCompat="@drawable/mas" />
+
+        </LinearLayout>
+
+
+    </RelativeLayout>
+
+</androidx.cardview.widget.CardView>
